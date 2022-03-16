@@ -1,0 +1,117 @@
+<html>
+<head>
+    <link rel="stylesheet" >
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'none')
+          e.style.display = 'block';
+       else
+          e.style.display = 'none';
+    }
+            
+            
+            
+            function buttonFunction(btn) {
+                btn.style.backgroundColor = "#FFF380";
+                btn.style.border="1px solid #FFDB58";
+                btn.style.color="Black";
+            }
+</script>
+
+
+
+
+</head>
+<body>
+
+    <div class="card">
+    <div class="content">
+        <div class="heading">
+        <p>ROI Calculator</p>
+        </div>
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="cake">
+    <ul>
+        <li>CAKE</li>
+        <li>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label></li>
+        <li>USD</li>
+        </ul>
+    </div>
+    <input type="text" class="form__input" id="name" placeholder="0.000 USD" required="" />
+    <div class="text_down">
+        <p>~CAKE 0.000</p>
+    <ul>
+        <li>$1000</li>
+        <li>$100</li>
+    </ul>
+    </div>
+    <div class="frametime">
+    <p>
+    Timeframe</p></div>
+    <div class="timeframe_btn">
+        <button class="button button1" onclick="buttonFunction(this)">1 Day</button>
+        <button class="button button2" onclick="buttonFunction(this)">7 Days</button>
+        <button class="button button1" onclick="buttonFunction(this)">30 Days</button>
+        <button class="button button2" onclick="buttonFunction(this)">1 Year</button>
+        <button class="button button1" onclick="buttonFunction(this)">5 Years</button>
+    </div>
+    <p><label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    Enable Accelerated APY</p>
+    
+    <div class="select_tier">
+        <p>Select tier</p>
+    </div>
+    <div class="Enable_btn">
+        <button class="button button1" onclick="buttonFunction(this)">Tier 1</button>
+        <button class="button button2" onclick="buttonFunction(this)">Tier 2</button>
+        <button class="button button1" onclick="buttonFunction(this)">Tier 3</button>
+        <button class="button button2" onclick="buttonFunction(this)">Tier 4</button>
+        <button class="button button1" onclick="buttonFunction(this)">Tier 5</button>
+    </div>
+    <br>
+    <div class="secondtext">
+    	<p>ROI at Current Rates</p>
+    </div>
+    <input type="text" class="form__input" id="name" placeholder="0.000 USD" required="" />
+    <div class="secondtext">
+    	<P>~0.000 CAKE + 0.000000 DON</P>
+    </div>
+    <div class="detail">
+    	<div class="show_detail"><a href="#" onclick="toggle_visibility('foo');">Show Details</a></div>
+       <div id="foo">
+            <div class="APY">
+                <a>APY</a>
+            </div>
+            <div class="perce">
+                <a>9.0%</a>
+            </div>
+			<ul>
+        <li>
+            Calculated based on current rates
+        </li>
+        <li>
+            All figure are estimates provided for your convenience only, and by no means represent guaranteed returns.
+        </li>
+        </ul>
+		</div>
+    </div>
+	</div>
+    
+
+
+
+
+</body>
+
+</html>
